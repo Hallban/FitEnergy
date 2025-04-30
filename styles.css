@@ -1,0 +1,497 @@
+/* Base Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  padding: 15px 0;
+}
+
+header .navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+header .navbar-brand span {
+  color: #00ff88;
+  border: 1px solid #00ff88;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+header .nav-link {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+header .nav-link:hover {
+  color: #00ff88;
+}
+
+header .btn {
+  background-color: #00c851;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+header .btn:hover {
+  background-color: #007e33;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #222;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-section h1 {
+  color: #00ff88;
+  font-size: 2.8rem;
+}
+
+.hero-section p {
+  color: #bbb;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.hero-section .btn-lg {
+  background-color: #00c851;
+  color: #fff;
+  border: none;
+  margin-top: 30px;
+  padding: 15px 40px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.hero-section .btn-lg:hover {
+  background-color: #007e33;
+}
+
+/* Categories */
+.categories {
+  padding: 60px 0;
+}
+
+.categories img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categories img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Price Section */
+.prices-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.price-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.price-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateX(5px);
+}
+
+.price-card.highlight {
+  border-left: 5px solid #00ff88;
+}
+
+.service-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  flex: 1;
+}
+
+.price-badge {
+  background: #00ff88;
+  color: #222;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  min-width: 100px;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .price-grid {
+    flex-direction: column;
+  }
+  
+  .categories-col {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 15px;
+  }
+  
+  .category-card {
+    min-width: 200px;
+  }
+  
+  .price-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .price-badge {
+    align-self: flex-end;
+  }
+}
+.fe-price-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
+}
+    
+.fe-price-header {
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.fe-price-title-img {
+  height: 50px;
+  max-width: 100%;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+    
+.fe-price-content {
+  display: flex;
+  gap: 30px;
+  box-sizing: border-box;
+}
+    
+.fe-services-column {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+}
+    
+.fe-service-btn {
+  padding: 15px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+    
+.fe-service-btn:hover {
+  background: #aaaaaa;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+    
+.fe-active {
+  background: #00FF78;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,255,120,0.3);
+}
+    
+.fe-prices-column {
+  flex: 1;
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  box-sizing: border-box;
+  position: relative;
+}
+    
+.fe-prices-column::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 0;
+  background: inherit;
+  border-radius: inherit;
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0.5;
+}
+    
+.fe-price-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px dashed #222;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+.fe-price-item:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+    
+.fe-price-item:last-child {
+  border-bottom: none;
+}
+ 
+.fe-service-name {
+  color: #333;
+  font-size: 15px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.fe-service-price {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 0 1px 2px rgba(231,76,60,0.2);
+}
+
+@media (max-width: 768px) {
+  .fe-price-container {
+    filter: drop-shadow(0 3px 6px rgba(0,0,0,0.1));
+  }
+  
+  .fe-service-btn {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+}
+
+@media (max-width: 768px) {
+   .fe-price-content {
+     flex-direction: column;
+}
+
+.fe-services-column {
+   width: 100%;
+   flex-direction: row;
+   overflow-x: auto;
+   padding-bottom: 10px;
+ }
+
+.fe-service-btn {
+   white-space: nowrap;
+    min-width: 200px;
+ }
+}
+
+/* About Section */
+.about {
+  padding: 80px 0;
+}
+
+.about img {
+  border-radius: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+}
+
+/* Team Section */
+.team {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+}
+
+.team img {
+  width: 350px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00ff88;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.team img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.team h3 {
+  margin-top: 20px;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .team img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* Gallery */
+.gallery {
+  padding: 80px 0;
+}
+
+.gallery img {
+  border-radius: 8px;
+}
+
+/* Contact Section */
+.contact-custom {
+  background-color: #1f2b26;
+  padding: 1px 0;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-inner-box {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 3px solid #00ff88;
+  border-radius: 10px;
+  padding: 10px 10px;
+  background-color: #1f2b26;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.contact-title {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #00ff88;
+  position: relative;
+  width: 100%;
+}
+
+.contact-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #00ff88;
+}
+
+.text-block {
+  flex: 1 1 10%;
+  min-width: 300px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.contact-item i {
+  margin-right: 15px;
+  font-size: 1.2rem;
+  color: #00ff88;
+  min-width: 20px;
+}
+
+.border-map {
+  border: 3px solid #00ff88;
+  border-radius: 5px;
+  max-width: 90%;
+  height: auto;
+}
+
+.trainer-img {
+  position: absolute;
+  bottom: 20px;
+  left: 150px;
+  width: 370px;
+  z-index: 2;
+}
+
+.contact-custom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px 50px 0 0;
+  background-color: #1f2b26;
+  z-index: 0;
+}
+
+/* Footer */
+.footer-custom {
+  background-color: #000;
+  color: #ccc;
+  font-size: 0.9rem;
+  padding: 40px 20px 20px;
+  width: 100%;
+}
+
+.footer-custom .fit-logo {
+  color: #00ff88;
+  border: 1px solid #00ff88;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+.footer-custom .footer-nav a,
+.footer-custom .footer-links a {
+  margin-right: 12px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-custom .footer-nav a:hover,
+.footer-custom .footer-links a:hover {
+  color: #00ff88;
+  text-decoration: underline;
+}
